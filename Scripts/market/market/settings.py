@@ -93,13 +93,14 @@ WSGI_APPLICATION = 'market.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'shop',
-        'USER': 'manager',
-        'PASSWORD': 'pass_word',
-        'HOST': 'localhost',
-        'PORT': '3306'
+        'NAME': os.getenv('DATABASE_NAME', 'shop'),
+        'USER': os.getenv('DATABASE_USER', 'manager'),
+        'PASSWORD': os.getenv('DATABASE_PASSWORD', 'pass_word'),
+        'HOST': os.getenv('DATABASE_HOST', 'db'),
+        'PORT': '3306',
     }
 }
+
 
 
 # Password validation

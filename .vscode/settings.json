@@ -17,21 +17,6 @@
             "connectionTimeout": 50
         },
         {
-            "mysqlOptions": {
-                "authProtocol": "xprotocol",
-                "enableSsl": "Disabled"
-            },
-            "previewLimit": 50,
-            "server": "localhost",
-            "port": 33060,
-            "driver": "MySQL",
-            "name": "MySQL Local",
-            "database": "shop",
-            "username": "manager",
-            "password": "pass_word",
-            "connectionTimeout": 30
-        },
-        {
             "previewLimit": 50,
             "server": "127.0.0.1",
             "port": 5432,
@@ -41,6 +26,21 @@
             "username": "postgres",
             "password": "40457381",
             "connectionTimeout": 15
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "xprotocol",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 33060,
+            "driver": "MySQL",
+            "name": "shop",
+            "database": "shop",
+            "username": "manager",
+            "password": "pass_word",
+            "connectionTimeout": 30
         }
     ]
 }

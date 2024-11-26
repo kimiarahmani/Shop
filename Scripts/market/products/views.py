@@ -2,7 +2,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
 import random  
-from faker import Faker   
 from categories.models import Category, Product
 
 def home(request):  
